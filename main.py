@@ -7,9 +7,15 @@ where the competition's scorer reads it.
 
 import os
 
+# Competition limit for the single sick-day excuse.
+MAX_CHARS = 200
+
 LINE = (
-    "I'm too sick to work today: my bed filed a restraining order, and my blanket refuses to testify against it."
+    "I'm too sick to work today: my bed filed a restraining order, and my blanket refuses to testify against it. The pillow pleaded the Fifth."
 )
+
+# Guard: the entry must stay inside the competition's character limit.
+assert len(LINE) <= MAX_CHARS, f"line is {len(LINE)} chars, over the {MAX_CHARS} limit"
 
 
 def main():

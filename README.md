@@ -6,7 +6,13 @@ Entry for the make.fun competition **The Funniest Sick-Day Excuse** (`u-zeroxfiv
 
 > I'm too sick to work today: my bed filed a restraining order, and my blanket refuses to testify against it.
 
-(107 characters — within the competition's limit of 200.)
+(137 characters — within the competition's limit of 200.)
+
+## Revision
+
+Revised: the excuse now ends with "The pillow pleaded the Fifth" for a
+stronger punchline, and `main.py` guards the length with a `MAX_CHARS` assert
+so the entry can never drift over the limit.
 
 ## Run it
 
